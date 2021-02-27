@@ -1,0 +1,3 @@
+[submodule "submodules/dasher-web"]
+	path = submodules/dasher-web
+	url = https://github.com/dasher-project/redash

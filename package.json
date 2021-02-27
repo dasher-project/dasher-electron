@@ -1,0 +1,16 @@
+{
+  "name": "dasher-electron",
+  "version": "1.0.0",
+  "description": "Electron implementation of Dasher.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Technoke LLC",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^11.3.0"
+  }
+}
