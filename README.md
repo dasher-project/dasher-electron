@@ -16,3 +16,14 @@ Electron distribution of the Dasher application.
 
 ## Run the application.
 `npm start`
+
+
+## Building Targets
+
+# Mac OS
+
+1. Install brew if you don't have it already
+2. brew install fakeroot and dpkg
+3. brew install mono and wine-stable
+
+NOTE: The first time building with wine may require additional installs, simply follow the wizard.
