@@ -2,7 +2,7 @@
   "name": "dasher-electron",
   "version": "1.0.0",
   "description": "Electron implementation of Dasher.",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron-forge start",
@@ -18,10 +18,13 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.57",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.57",
     "@electron-forge/maker-zip": "^6.0.0-beta.57",
-    "electron": "^11.3.0"
+    "electron": "^11.3.0",
+    "electron-prebuilt-compile": "8.2.0"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-forge": "^5.2.4",
+    "electron-squirrel-startup": "^1.0.0",
+    "python": "0.0.4"
   },
   "config": {
     "forge": {

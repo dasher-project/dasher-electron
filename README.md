@@ -25,5 +25,7 @@ Electron distribution of the Dasher application.
 1. Install brew if you don't have it already
 2. brew install fakeroot and dpkg
 3. brew install mono and wine-stable
+4. npm i -g @electron-forge/cli
+5. npm run make --platform=darwin
 
 NOTE: The first time building with wine may require additional installs, simply follow the wizard.
