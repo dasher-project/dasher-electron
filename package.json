@@ -14,6 +14,7 @@
   "author": "Technoke LLC",
   "license": "MIT",
   "devDependencies": {
+    "dmg-license": "^1.0.9",
     "electron": "^11.3.0",
     "electron-builder": "^22.11.7"
   },
@@ -21,14 +22,16 @@
     "appId": "com.acecentre.dasher",
     "productName": "Dasher",
     "mac": {
-        "category": "public.app-category.lifestyle"
+      "category": "public.app-category.lifestyle"
     },
     "dmg": {
-        "icon": false
+      "icon": false
     },
     "linux": {
-        "target": ["AppImage"],
-        "category": "Office"
+      "target": [
+        "AppImage"
+      ],
+      "category": "Office"
     }
   }
 }
