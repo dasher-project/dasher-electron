@@ -5,52 +5,30 @@
   "main": "src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make"
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps",
+    "build": "electron-builder --mac --windows --linux",
+    "release": "electron-builder --mac --windows --linux --publish always"
   },
   "keywords": [],
   "author": "Technoke LLC",
   "license": "MIT",
   "devDependencies": {
-    "@electron-forge/cli": "^6.0.0-beta.57",
-    "@electron-forge/maker-deb": "^6.0.0-beta.57",
-    "@electron-forge/maker-rpm": "^6.0.0-beta.57",
-    "@electron-forge/maker-squirrel": "^6.0.0-beta.57",
-    "@electron-forge/maker-zip": "^6.0.0-beta.57",
     "electron": "^11.3.0",
-    "electron-prebuilt-compile": "8.2.0"
+    "electron-builder": "^22.11.7"
   },
-  "dependencies": {
-    "electron-forge": "^5.2.4",
-    "electron-squirrel-startup": "^1.0.0",
-    "python": "0.0.4"
-  },
-  "config": {
-    "forge": {
-      "packagerConfig": {},
-      "makers": [
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "dasher_electron"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
-        },
-        {
-          "name": "@electron-forge/maker-deb",
-          "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
-          "config": {}
-        }
-      ]
+  "build": {
+    "appId": "com.acecentre.dasher",
+    "productName": "Dasher",
+    "mac": {
+        "category": "public.app-category.lifestyle"
+    },
+    "dmg": {
+        "icon": false
+    },
+    "linux": {
+        "target": ["AppImage"],
+        "category": "Office"
     }
   }
 }
