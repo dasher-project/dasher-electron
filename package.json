@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
     "postinstall": "electron-builder install-app-deps",
-    "build": "electron-builder --mac --windows --linux",
+    "build": "electron-builder",
     "release": "electron-builder --mac --windows --linux --publish always"
   },
   "keywords": [],
