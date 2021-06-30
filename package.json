@@ -1,14 +1,14 @@
 {
   "name": "dasher-electron",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Electron implementation of Dasher.",
   "main": "src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
     "postinstall": "electron-builder install-app-deps",
-    "build": "electron-builder",
-    "release": "electron-builder --mac --windows --linux --publish always"
+    "build": "git submodule update --init && electron-builder",
+    "release": "git submodule update --init && electron-builder --mac --windows --linux --publish always"
   },
   "keywords": [],
   "author": "Technoke LLC",
