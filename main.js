@@ -13,7 +13,7 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('./submodules/dasher-web/browser/index.html')
+  mainWindow.loadFile('./node_modules/redash/index.html')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()

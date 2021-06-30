@@ -1,6 +1,6 @@
 {
   "name": "dasher-electron",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Electron implementation of Dasher.",
   "main": "src/main.js",
   "scripts": {
@@ -13,6 +13,9 @@
   "keywords": [],
   "author": "Technoke LLC",
   "license": "MIT",
+  "dependencies": {
+    "redash": "git+https://github.com/dasher-project/redash.git#b6dd39f"
+  },
   "devDependencies": {
     "electron": "^11.3.0",
     "electron-builder": "^22.11.7"
@@ -23,7 +26,7 @@
   "build": {
     "appId": "com.acecentre.dasher",
     "productName": "Dasher",
-    "extraResources": ["submodules/*"],
+    "extraResources": ["submodules/**/*"],
     "mac": {
       "category": "public.app-category.lifestyle"
     },
