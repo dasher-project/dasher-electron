@@ -23,7 +23,7 @@
   "build": {
     "appId": "com.acecentre.dasher",
     "productName": "Dasher",
-    "files": ["submodules/*"],
+    "files": ["**/*", "submodules/*"],
     "mac": {
       "category": "public.app-category.lifestyle"
     },
