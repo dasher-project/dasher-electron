@@ -1,6 +1,6 @@
 {
   "name": "dasher-electron",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "Electron implementation of Dasher.",
   "main": "src/main.js",
   "scripts": {
@@ -23,7 +23,7 @@
   "build": {
     "appId": "com.acecentre.dasher",
     "productName": "Dasher",
-    "files": ["**/*", "submodules/*"],
+    "extraResources": ["submodules/*"],
     "mac": {
       "category": "public.app-category.lifestyle"
     },
