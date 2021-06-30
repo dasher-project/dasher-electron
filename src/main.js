@@ -7,13 +7,15 @@ function createWindow () {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
-    }
   })
-
   // and load the index.html of the app.
-  mainWindow.loadFile('./submodules/dasher-web/browser/index.html')
+  let path = `submodules/dasher-web/browser/index.html`
+
+  if (app.isPackaged) {
+    mainWindow.loadFile(`${process.resourcesPath}/${path}`)
+  } else {
+    mainWindow.loadFile(path)
+  }
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()

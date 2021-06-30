@@ -13,9 +13,6 @@
   "keywords": [],
   "author": "Technoke LLC",
   "license": "MIT",
-  "dependencies": {
-    "redash": "git+https://github.com/dasher-project/redash.git#b6dd39f"
-  },
   "devDependencies": {
     "electron": "^11.3.0",
     "electron-builder": "^22.11.7"
