@@ -21,3 +21,13 @@ Electron distribution of the Dasher application.
 ## Locally build host binary.
 
 `yarn build`
+
+# Production Builds
+
+Production builds are periodically realeased for the following platforms:
+
+1. Windows (.exe)
+2. Mac (.dmg)
+3. Linux (.AppImage)
+
+For more information on running AppImage files, please see (https://docs.appimage.org/user-guide/faq.html)
