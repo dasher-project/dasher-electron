@@ -18,6 +18,6 @@ Electron distribution of the Dasher application.
 ## Run the application.
 `yarn start`
 
-## Locally build host binary
+## Locally build host binary.
 
 `yarn build`
