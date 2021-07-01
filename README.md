@@ -31,3 +31,18 @@ Production builds are periodically realeased for the following platforms:
 3. Linux (.AppImage)
 
 For more information on running AppImage files, please see (https://docs.appimage.org/user-guide/faq.html)
+
+## Creating a Production Build
+
+To create a new production build, update the version number within package.json and then tag the commit with the corresponding version.
+
+Example:
+
+```
+package.json
+...
+  "version": "1.1.2",
+...
+
+git tag v1.1.2
+```
