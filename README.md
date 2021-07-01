@@ -6,6 +6,7 @@ Electron distribution of the Dasher application.
 
 ## Clone this repository and make it your working path.
 `git clone git@github.com:dasher-project/dasher-electron.git`
+
 `cd dasher-electron`
 
 ## Initialize subrepositories.
