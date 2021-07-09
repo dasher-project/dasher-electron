@@ -46,3 +46,22 @@ package.json
 
 git tag v1.1.2
 ```
+
+# Third Party
+
+## MozoLM
+To enable and start the micro-service, you must have have Docker installed.
+Steps 1 and 2 can be triggered by a script via `npm run`:
+
+0. Define Training File
+1. Start the Envoy Proxy
+2. Start the MozoLM service
+
+```
+git clone https://github.com/google-research/mozolm
+export TRAINING_FILE=mozolm/models/testdata/en_wiki_1Kline_sample.txt
+cp $TRAINING_FILE ~/training.txt
+cd submodules/dasher-web/browser/dasher/third_party/mozolm
+npm install
+npm run
+```
