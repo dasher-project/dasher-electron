@@ -1,6 +1,7 @@
 # Dasher Electron
 
 Electron distribution of the Dasher application.
+For latest releases see [here](https://github.com/dasher-project/dasher-electron/releases/latest)
 
 # Running Locally
 
