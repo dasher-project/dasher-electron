@@ -4,6 +4,7 @@
   "description": "Electron implementation of Dasher.",
   "main": "src/main.js",
   "scripts": {
+    "lint": "yarn run eslint",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
     "postinstall": "electron-builder install-app-deps",
@@ -15,7 +16,9 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^11.3.0",
-    "electron-builder": "^22.11.7"
+    "electron-builder": "^22.11.7",
+    "eslint": "^7.31.0",
+    "eslint-config-google": "^0.14.0"
   },
   "optionalDependencies": {
     "dmg-license": "^1.0.9"
@@ -23,7 +26,9 @@
   "build": {
     "appId": "com.acecentre.dasher",
     "productName": "Dasher",
-    "extraResources": ["submodules/**/*"],
+    "extraResources": [
+      "submodules/**/*"
+    ],
     "mac": {
       "category": "public.app-category.lifestyle"
     },
