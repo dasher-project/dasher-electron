@@ -21,11 +21,11 @@
     "dmg-license": "^1.0.9"
   },
   "build": {
-    "appId": "com.acecentre.dasher",
+    "appId": "uk.org.acecentre.dasherelectron",
     "productName": "Dasher",
     "extraResources": ["submodules/**/*"],
     "mac": {
-      "category": "public.app-category.lifestyle"
+      "category": "public.app-category.utilities"
     },
     "dmg": {
       "icon": false
