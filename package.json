@@ -1,6 +1,6 @@
 {
   "name": "dasher-electron",
-  "version": "1.1.2",
+  "version": "1.2.1",
   "description": "Electron implementation of Dasher.",
   "main": "src/main.js",
   "scripts": {
@@ -18,19 +18,23 @@
     "electron": "^11.3.0",
     "electron-builder": "^22.11.7",
     "eslint": "^7.31.0",
+    "electron-builder-notarize": "^1.2.0",
     "eslint-config-google": "^0.14.0"
   },
   "optionalDependencies": {
     "dmg-license": "^1.0.9"
   },
   "build": {
-    "appId": "com.acecentre.dasher",
+    "afterSign": "electron-builder-notarize",
+    "appId": "uk.org.acecentre.dasherelectron",
     "productName": "Dasher",
     "extraResources": [
       "submodules/**/*"
     ],
     "mac": {
-      "category": "public.app-category.lifestyle"
+      "category": "public.app-category.utilities",
+      "hardenedRuntime": true,
+      "entitlements": "build/entitlements.mac.plist"
     },
     "dmg": {
       "icon": false
