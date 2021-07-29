@@ -35,7 +35,10 @@ For more information on running AppImage files, please see (https://docs.appimag
 
 ## Creating a Production Build
 
-To create a new production build, update the version number within package.json and then tag the commit with the corresponding version.
+To create a new production build:
+1. Merge the feature branches required into main
+2. Update the version number within package.json
+3. Tag the commit with the corresponding version number and push the changes to origin.
 
 Example:
 
@@ -46,4 +49,5 @@ package.json
 ...
 
 git tag v1.1.2
+git push && git push --tags
 ```
