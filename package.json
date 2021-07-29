@@ -15,17 +15,23 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^11.3.0",
-    "electron-builder": "^22.11.7"
+    "electron-builder": "^22.11.7",
+    "electron-builder-notarize": "^1.2.0"
   },
   "optionalDependencies": {
     "dmg-license": "^1.0.9"
   },
   "build": {
+    "afterSign": "electron-builder-notarize",
     "appId": "uk.org.acecentre.dasherelectron",
     "productName": "Dasher",
-    "extraResources": ["submodules/**/*"],
+    "extraResources": [
+      "submodules/**/*"
+    ],
     "mac": {
-      "category": "public.app-category.utilities"
+      "category": "public.app-category.utilities",
+      "hardenedRuntime": true,
+      "entitlements": "build/entitlements.mac.plist"
     },
     "dmg": {
       "icon": false
