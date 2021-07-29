@@ -1,4 +1,5 @@
 [![Build/release](https://github.com/dasher-project/dasher-electron/actions/workflows/build.yml/badge.svg)](https://github.com/dasher-project/dasher-electron/actions/workflows/build.yml)
+[![CI](https://github.com/dasher-project/dasher-electron/actions/workflows/lint.yml/badge.svg)](https://github.com/dasher-project/dasher-electron/actions/workflows/lint.yml)
 
 # Dasher Electron
 
