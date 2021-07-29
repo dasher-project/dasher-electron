@@ -1,3 +1,5 @@
+[![Build/release](https://github.com/dasher-project/dasher-electron/actions/workflows/build.yml/badge.svg)](https://github.com/dasher-project/dasher-electron/actions/workflows/build.yml)
+
 # Dasher Electron
 
 Electron distribution of the Dasher application.
