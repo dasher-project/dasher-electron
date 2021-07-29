@@ -1,8 +1,8 @@
 name: Quality
+on: pull_request
 
 jobs:
-  pull_request:
-    runs-on: pull_request
+  build:
     steps:
       - name: ESlint Runner Action
         # You may pin to the exact commit or the version.
