@@ -1,12 +1,12 @@
 name: Quality
 on:
   pull_request:
-    types: opened
+    types: [opened]
     branches: "*"
 
 jobs:
   build:
-    runs-on: opened
+    runs-on: ubuntu-latest
     steps:
       - name: ESlint Runner Action
         # You may pin to the exact commit or the version.
