@@ -1,5 +1,7 @@
 name: Quality
 on: pull_request
+  types: ["opened"]
+  branches: "*"
 
 jobs:
   build:
