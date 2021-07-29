@@ -1,0 +1,16 @@
+name: CI
+on: pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: ESlint Runner Action
+      # You may pin to the exact commit or the version.
+      # uses: tinovyatkin/action-eslint@3d7db709c05548b9146ea96dcc7ee8a0d5b6ed75
+      uses: tinovyatkin/action-eslint@v1
+      with:
+        # Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        # This check name to post annotations
+        #check-name: # optional
