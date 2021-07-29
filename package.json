@@ -1,6 +1,6 @@
 {
   "name": "dasher-electron",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Electron implementation of Dasher.",
   "main": "src/main.js",
   "scripts": {
