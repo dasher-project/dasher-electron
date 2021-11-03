@@ -54,3 +54,7 @@ package.json
 git tag v1.1.2
 git push && git push --tags
 ```
+
+## Versioning
+
+Dasher-Electron follows [Symantic Versioning](https://semver.org/)
